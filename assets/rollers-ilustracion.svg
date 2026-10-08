@@ -1,0 +1,19 @@
+<!-- Ilustración simple de rollers para decorar la página -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" role="img" aria-labelledby="titulo descripcion">
+    <title id="titulo">Rollers naranjas</title>
+    <desc id="descripcion">Ilustración de dos rollers naranjas con ruedas azules.</desc>
+    <!-- Fondo suave de la ilustración -->
+    <rect width="500" height="360" rx="30" fill="#d9edf2"/>
+    <!-- Roller de atrás -->
+    <path d="M92 152h160c22 0 40 18 40 40v55H130c-21 0-38-17-38-38z" fill="#e3663c"/>
+    <path d="M122 152V94h86l45 58z" fill="#ff8a5c"/>
+    <circle cx="150" cy="270" r="22" fill="#254b6d"/><circle cx="238" cy="270" r="22" fill="#254b6d"/>
+    <circle cx="150" cy="270" r="9" fill="#ffd166"/><circle cx="238" cy="270" r="9" fill="#ffd166"/>
+    <!-- Roller de adelante -->
+    <path d="M218 205h170c20 0 37 17 37 37v49H256c-21 0-38-17-38-38z" fill="#c95431"/>
+    <path d="M250 205v-61h87l47 61z" fill="#e3663c"/>
+    <circle cx="277" cy="313" r="22" fill="#254b6d"/><circle cx="371" cy="313" r="22" fill="#254b6d"/>
+    <circle cx="277" cy="313" r="9" fill="#ffd166"/><circle cx="371" cy="313" r="9" fill="#ffd166"/>
+    <!-- Líneas que dan sensación de movimiento -->
+    <path d="M56 276h54M34 299h88" stroke="#254b6d" stroke-linecap="round" stroke-width="9"/>
+</svg>

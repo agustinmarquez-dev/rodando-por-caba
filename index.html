@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog personal sobre rollers y encuentros para patinar en CABA.">
+    <title>Rodando por CABA</title>
+    <!-- Tipografías gratuitas similares a las de la página de referencia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado principal del blog -->
+    <header class="encabezado">
+        <p class="etiqueta">Blog personal</p>
+        <h1>Rodando por CABA</h1>
+        <p>Aprender, recorrer la ciudad y encontrar compañerxs de rollers.</p>
+    </header>
+
+    <!-- Barra de navegación con enlaces internos -->
+    <nav class="menu" aria-label="Navegación principal">
+        <a class="marca" href="#inicio">RPC</a>
+        <!-- Lista de enlaces del menú -->
+        <ul class="menu-enlaces">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#mi-estilo">Estilo de vida</a></li>
+            <li><a href="#rollers">Rollers</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main id="inicio">
+        <!-- Sección de presentación personal -->
+        <section id="sobre-mi" class="seccion presentacion">
+            <div>
+                <p class="etiqueta">¡Hola!</p>
+                <h2>Me presento</h2>
+                <p>Soy una persona curiosa, con ganas de moverme más y disfrutar de los espacios de Buenos Aires. Este blog es un lugar para compartir mi entusiasmo por los rollers y conectar con gente que tenga la misma energía.</p>
+                <p>Todavía estoy aprendiendo, así que mi objetivo no es ir rápido: es animarme, practicar y pasarla bien.</p>
+            </div>
+            <!-- Imagen decorativa del proyecto -->
+            <img src="assets/rollers-ilustracion.svg" alt="Ilustración de unos rollers con ruedas naranjas">
+        </section>
+
+        <!-- Sección sobre intereses cotidianos -->
+        <section id="mi-estilo" class="seccion">
+            <p class="etiqueta">Lo que me gusta</p>
+            <h2>Mi estilo de vida</h2>
+            <p class="texto-intro">Me interesa encontrar momentos simples para salir de la rutina y disfrutar la ciudad.</p>
+            <!-- Lista de intereses personales -->
+            <ul class="tarjetas">
+                <li><h3>Movimiento</h3><p>Buscar actividades que me hagan sentir con más energía.</p></li>
+                <li><h3>Aire libre</h3><p>Conocer parques, plazas y recorridos tranquilos de CABA.</p></li>
+                <li><h3>Comunidad</h3><p>Compartir el aprendizaje y conocer nuevas personas.</p></li>
+            </ul>
+        </section>
+
+        <!-- Sección principal sobre la búsqueda de grupo -->
+        <section id="rollers" class="seccion invitacion">
+            <p class="etiqueta">Mi búsqueda actual</p>
+            <h2>Quiero aprender rollers en CABA</h2>
+            <p>Estoy buscando a alguien que pueda enseñarme lo básico: frenar, doblar, mantener el equilibrio y ganar confianza. También me encantaría formar un grupo de patinadores y patinadoras para organizar salidas tranquilas por Buenos Aires.</p>
+            <p>No importa si recién empezás o si ya tenés experiencia: la idea es aprender con paciencia, cuidarnos y disfrutar el recorrido.</p>
+        </section>
+
+        <!-- Formulario simple para practicar etiquetas HTML -->
+        <section id="contacto" class="seccion contacto">
+            <p class="etiqueta">¿Te sumás?</p>
+            <h2>Rodemos juntxs</h2>
+            <p>Si patinás en CABA o conocés lugares seguros para practicar, dejame tu mensaje.</p>
+
+            <!-- El formulario no envía datos todavía porque no tiene JavaScript ni servidor -->
+            <form class="formulario" action="#contacto" method="get">
+                <div class="campo-formulario">
+                    <!-- Etiqueta y campo para escribir el nombre -->
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Escribí tu nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <!-- Etiqueta y campo para escribir el correo -->
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" placeholder="nombre@email.com" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <!-- Lista para elegir el nivel de experiencia -->
+                    <label for="nivel">¿Cuál es tu nivel?</label>
+                    <select id="nivel" name="nivel">
+                        <option value="principiante">Estoy empezando</option>
+                        <option value="intermedio">Tengo algo de experiencia</option>
+                        <option value="avanzado">Tengo experiencia y puedo enseñar</option>
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <!-- Área para escribir un mensaje más largo -->
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame por dónde te gusta patinar"></textarea>
+                </div>
+
+                <!-- Botón para enviar el formulario -->
+                <button class="boton" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer><p>Rodando por CABA · Un proyecto personal para aprender HTML y CSS.</p></footer>
+</body>
+</html>

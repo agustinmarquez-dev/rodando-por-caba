@@ -1,0 +1,84 @@
+/* Reinicio simple para evitar márgenes por defecto */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Colores y tipografía de toda la página */
+body { background-color: #f7f7f9; color: #242424; font-family: "Lato", Arial, sans-serif; line-height: 1.6; }
+
+/* Encabezado con el título del blog */
+.encabezado { background-color: #121212; color: #ffffff; padding: 70px 20px; text-align: center; }
+
+/* Títulos principales */
+h1 { font-family: "Exo 2", Arial, sans-serif; font-size: 2.8rem; margin-bottom: 10px; }
+h2 { color: #4a1b98; font-family: "Exo 2", Arial, sans-serif; font-size: 2rem; margin-bottom: 15px; }
+h3 { color: #d017fc; font-family: "Exo 2", Arial, sans-serif; margin-bottom: 8px; }
+
+/* Texto pequeño que acompaña cada sección */
+.etiqueta { color: #a000c5; font-size: 0.85rem; font-weight: bold; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase; }
+.encabezado .etiqueta { color: #fff848; }
+
+/* Barra de navegación */
+.menu { align-items: center; background-color: #ffffff; display: flex; justify-content: space-between; padding: 16px 8%; }
+
+/* Nombre corto del blog dentro del menú */
+.marca { color: #d017fc; font-family: "Exo 2", Arial, sans-serif; font-size: 1.25rem; font-weight: bold; text-decoration: none; }
+
+/* Lista que contiene los enlaces del menú */
+.menu-enlaces { display: flex; gap: 22px; list-style: none; }
+.menu-enlaces a { color: #242424; font-weight: bold; text-decoration: none; }
+.menu-enlaces a:hover { color: #007bff; }
+
+/* Ancho y espacio del contenido central */
+main { margin: 0 auto; max-width: 1000px; padding: 25px 20px; }
+.seccion { margin: 35px 0; }
+p { margin-bottom: 12px; }
+.texto-intro { max-width: 650px; }
+
+/* Presentación en dos columnas */
+.presentacion { align-items: center; display: flex; gap: 40px; }
+.presentacion div, .presentacion img { width: 50%; }
+.presentacion img { max-width: 360px; }
+
+/* Contenedor de las tarjetas */
+.tarjetas { display: flex; gap: 20px; list-style: none; margin-top: 24px; }
+.tarjetas li { background-color: #ffffff; border-top: 4px solid #22b3fc; border-radius: 10px; flex: 1; padding: 24px; }
+
+/* Caja destacada para la invitación */
+.invitacion { background-color: #ede6fb; border-left: 6px solid #d017fc; border-radius: 10px; padding: 35px; }
+
+/* Área final de contacto */
+.contacto { text-align: center; }
+
+/* Caja del formulario */
+.formulario { background-color: #ffffff; border-radius: 10px; margin: 25px auto 0; max-width: 620px; padding: 28px; text-align: left; }
+
+/* Espacio entre cada campo */
+.campo-formulario { margin-bottom: 18px; }
+
+/* Etiquetas de los campos */
+label { color: #4a1b98; display: block; font-weight: bold; margin-bottom: 6px; }
+
+/* Campos donde se escribe o selecciona información */
+input, select, textarea { border: 1px solid #c5cdea; border-radius: 5px; font: inherit; padding: 10px; width: 100%; }
+
+/* Borde visible para saber qué campo está activo */
+input:focus, select:focus, textarea:focus { border-color: #007bff; outline: 2px solid #fff848; }
+
+/* Botón del formulario */
+.boton { background-color: #007bff; border-radius: 6px; color: #ffffff; display: inline-block; font-weight: bold; margin-top: 8px; padding: 12px 20px; text-decoration: none; }
+.boton { border: none; cursor: pointer; font: inherit; }
+.boton:hover { background-color: #4a1b98; }
+
+/* Pie de página */
+footer { background-color: #121212; color: #ffffff; padding: 20px; text-align: center; }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 700px) {
+    .presentacion, .tarjetas { flex-direction: column; }
+    .presentacion div, .presentacion img { width: 100%; }
+    .presentacion img { margin: 0 auto; }
+    h1 { font-size: 2.2rem; }
+    .menu { align-items: flex-start; flex-direction: column; gap: 12px; }
+    .menu-enlaces { flex-wrap: wrap; gap: 10px 16px; }
+    .invitacion { padding: 25px; }
+    .formulario { padding: 20px; }
+}
